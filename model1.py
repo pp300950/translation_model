@@ -5,7 +5,16 @@ with open('translation.json', 'r', encoding='utf-8') as f:
     translation_data = json.load(f)
 
 translation_dict = translation_data['translation_dict']
-reverse_translation_dict = {v: k for k, v in translation_dict.items()} 
+
+# Create reverse translation dictionary
+reverse_translation_dict = {}
+for k, v in translation_dict.items():
+    if isinstance(v, list):
+        for item in v:
+            reverse_translation_dict[item] = k
+    else:
+        reverse_translation_dict[v] = k
+
 example_sentences = translation_data['example']
 
 def softmax(x):
