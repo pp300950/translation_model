@@ -4,3 +4,6 @@ Developers
 Pongpond - Responsible for improving and developing the learning system and algorithms used for language translation.
 Jenny - A Chinese language expert who will review and improve language data to ensure the system receives accurate information.
 Poon - An English language expert who will review and improve language data to ensure the system receives accurate information.
+
+License
+This project is not open source. Redistribution or modification is not permitted without permission from the team.
