@@ -1072,8 +1072,8 @@
   "example": [
     {
       "zh": "我 觉得 你的 眼睛 很美",
-      "th": "ฉัน คิดว่า ตา เธอ สวยมาก",
-      "en": "I think your eyes are beautiful"
+      "th": "ฉัน คิดว่า ตา ของเธอ สวยมาก",
+      "en": "I think your eyes are very beautiful"
     },
     {
       "zh": "足球",
@@ -1577,7 +1577,7 @@
     },
     {
       "zh": "什么时候",
-      "th": "เม่อไหร่",
+      "th": "เมื่อไหร่",
       "en": "When"
     },
     {
@@ -1658,12 +1658,17 @@
     {
       "zh": "眼睛",
       "th": "ตา",
-      "en": "eye"
+      "en": "eyes"
     },
     {
       "zh": "很美",
       "th": "สวย",
       "en": "beautiful"
+    },
+    {
+      "zh": "很多",
+      "th": "มาก",
+      "en": "very"
     },
     {
       "zh": "讨厌",
@@ -1699,11 +1704,6 @@
       "zh": "上课",
       "th": "เรียนรู้",
       "en": "learn"
-    },
-    {
-      "zh": " 可好",
-      "th": "แต่",
-      "en": "but"
     },
     {
       "zh": "旅行",
@@ -2516,24 +2516,99 @@
       "en": "sister"
     },
     {
-      "zh": "我 非常 讨厌 体育 课",
-      "th": "ฉัน เกลียด วิชา พละ มาก",
-      "en": "I really hate PE class"
+      "zh": "妹妹",
+      "th": "น้องสาว",
+      "en": "sister"
+    },
+    {
+      "zh": "你",
+      "th": "เธอ",
+      "en": "you"
+    },
+    {
+      "zh": "你",
+      "th": "คุณ",
+      "en": "you"
+    },
+    {
+      "zh": "你",
+      "th": "เเก",
+      "en": "you"
+    },
+    {
+      "zh": "你",
+      "th": "เอง",
+      "en": "you"
+    },
+    {
+      "zh": "吃米饭",
+      "th": "กินข้าว",
+      "en": "eat rice"
+    },
+    {
+      "zh": "米",
+      "th": "ข้าว",
+      "en": "rice"
+    },
+    {
+      "zh": "打",
+      "th": "โดน",
+      "en": "hit"
+    },
+    {
+      "zh": "美丽的",
+      "th": "สวย",
+      "en": "beautiful"
+    },
+    {
+      "zh": "但",
+      "th": "เเต่",
+      "en": "but"
+    },
+    {
+      "zh": "猫 有 毛。",
+      "th": "เเมว มี ขน",
+      "en": "cat has hair"
+    },
+    {
+      "zh": "她 有 眼睛",
+      "th": "เธอ มี ตา",
+      "en": "she has eyes"
+    },
+    {
+      "zh": "她 很美丽",
+      "th": "เธอ สวย มาก",
+      "en": "she very beautiful"
+    },
+    {
+      "zh": "猫 喜欢 鱼",
+      "th": "เเมว ชอบ ปลา",
+      "en": "cat likes fish"
+    },
+    {
+      "zh": "但 他 讨 厌我。",
+      "th": "but he hates me",
+      "en": "เเต่ เขา เกลียด ฉัน"
+    },
+    {
+      "zh": "我 恨 你",
+      "th": "ฉัน เกลียด เธอ",
+      "en": "I hate you"
     },
     {
       "zh": "明天 我们 要 期末 考试 了",
       "th": "พรุ่งนี้ เรา ต้อง สอบ ปลายภาค แล้ว",
-      "en": "We have our final exam tomorrow"
+      "en": "we have our final exam tomorrow"
     },
     {
       "zh": "别人 都 在 认真 上课",
       "th": "คนอื่น กำลัง ตั้งใจ เรียน",
-      "en": "Others are paying attention to class"
+      "en": "others are paying attention to class"
     },
     {
       "zh": "你 可好 一直 在 玩",
       "th": "เธอ แต่ ตลอด เล่น",
-      "en": "You are always playing"
+      "en": "you are always playing"
     },
     {
       "zh": "我 真 想 不 出 来 该 写 什 么 了",
@@ -2543,12 +2618,12 @@
     {
       "zh": "你 喜欢 听 音乐 吗",
       "th": "เธอ ชอบ ฟัง เพลง ไหม",
-      "en": "Do you like listening to music?"
+      "en": "do you like listening to music?"
     },
     {
       "zh": "我们 一起 去 公园 散步 吧",
       "th": "เรา ไป สวนสาธารณะ เดิน ด้วย กัน นะ",
-      "en": "Let's go for a walk in the park together"
+      "en": "let's go for a walk in the park together"
     },
     {
       "zh": "我 喜欢 踢 足球",
@@ -2558,22 +2633,22 @@
     {
       "zh": "他 是 我 的 好 友",
       "th": "เขา เป็น เพื่อน ที่ ดี ของ ฉัน",
-      "en": "He is my good friend"
+      "en": "he is my good friend"
     },
     {
       "zh": "她 很 擅长 唱歌 和 跳舞",
       "th": "เธอ เก่ง ใน การ ร้องเพลง และ เต้นรำ",
-      "en": "She is good at singing and dancing"
+      "en": "she is good at singing and dancing"
     },
     {
       "zh": "这个 礼物 真的 很 意外",
       "th": "ของขวัญ นี้ น่า แปลกใจ จริงๆ",
-      "en": "This gift is really surprising"
+      "en": "this gift is really surprising"
     },
     {
       "zh": "请 你 帮 我 买 一瓶 水",
       "th": "ช่วย ฉัน ซื้อ ขวด น้ำ หน่อย นะ",
-      "en": "Please help me buy a bottle of water"
+      "en": "please help me buy a bottle of water"
     },
     {
       "zh": "我 想 要 一个 大一点 的 空间",
@@ -2583,27 +2658,27 @@
     {
       "zh": "这 件 衣服 太 贵 了",
       "th": "เสื้อ ครบ นี้ แพง เกินไป",
-      "en": "This piece of clothing is too expensive"
+      "en": "this piece of clothing is too expensive"
     },
     {
       "zh": "你 在 做 什么",
       "th": "เธอ กำลัง ทำ อะไร",
-      "en": "What are you doing?"
+      "en": "what are you doing?"
     },
     {
       "zh": "他 明天 要 来 我家",
       "th": "พรุ่งนี้ เขา จะ มา ที่ บ้าน ฉัน",
-      "en": "He is coming to my house tomorrow"
+      "en": "he is coming to my house tomorrow"
     },
     {
       "zh": "这个 问题 太 难 了",
       "th": "คำถาม นี้ ยาก เกินไป",
-      "en": "This question is too difficult"
+      "en": "this question is too difficult"
     },
     {
       "zh": "他们 都 喜欢 吃 寿司",
       "th": "พวกเขา ชอบ กิน ซูชิ ทั้งหมด",
-      "en": "They all like to eat sushi"
+      "en": "they all like to eat sushi"
     },
     {
       "zh": "我 想 吃 一个 大 份 的 披萨",
@@ -2613,42 +2688,42 @@
     {
       "zh": "请 你 帮 我 打开 窗户",
       "th": "ช่วย ฉัน เปิด หน้าต่าง หน่อย นะ",
-      "en": "Please help me open the window"
+      "en": "please help me open the window"
     },
     {
       "zh": "她 今天 穿 了 一 件 很 漂亮 的 连衣裙",
       "th": "เธอ วันนี้ ใส่ ชุด กระโปรง ที่ สวยงาม มาก",
-      "en": "She is wearing a beautiful dress today"
+      "en": "she is wearing a beautiful dress today"
     },
     {
       "zh": "我们 快 到 了",
       "th": "เรา เข้า ใกล้ แล้ว",
-      "en": "We are almost there"
+      "en": "we are almost there"
     },
     {
       "zh": "你 要 喝 什么",
       "th": "เธอ จะ ดื่ม อะไร",
-      "en": "What do you want to drink?"
+      "en": "what do you want to drink?"
     },
     {
       "zh": "这个 电影 很 有 意思",
       "th": "ภาพยนตร์ นี้ น่าสนใจ มาก",
-      "en": "This movie is very interesting"
+      "en": "this movie is very interesting"
     },
     {
       "zh": "我们 一起 去 看 电影 吧",
       "th": "เรา ไป ดู หนัง ด้วย กัน นะ",
-      "en": "Let's go to the movies together"
+      "en": "let's go to the movies together"
     },
     {
       "zh": "他 是 我 的 哥哥",
       "th": "เขา เป็น พี่ชาย ของ ฉัน",
-      "en": "He is my older brother"
+      "en": "he is my older brother"
     },
     {
       "zh": "这 件 事情 真的 很 麻烦",
       "th": "เรื่อง นี้ ยุ่งยาก จริงๆ",
-      "en": "This matter is really troublesome"
+      "en": "this matter is really troublesome"
     },
     {
       "zh": "我 爱读书",
@@ -2658,12 +2733,12 @@
     {
       "zh": "你 的 猫 很 可爱",
       "th": "แมว ของ คุณ น่ารัก มาก",
-      "en": "Your cat is very cute"
+      "en": "your cat is very cute"
     },
     {
       "zh": "今天 天气 很 好",
       "th": "วันนี้ อากาศ ดี มาก",
-      "en": "The weather is very nice today"
+      "en": "the weather is very nice today"
     },
     {
       "zh": "我 昨天 去 了 超市",
@@ -2673,7 +2748,7 @@
     {
       "zh": "他 的 老师 很 严格",
       "th": "ครู ของ เขา เคร่งครัด",
-      "en": "His teacher is very strict"
+      "en": "his teacher is very strict"
     },
     {
       "zh": "我 喜欢 吃 水果",
@@ -2683,67 +2758,67 @@
     {
       "zh": "这 是 我 的 电话号码",
       "th": "นี่ คือ เบอร์ โทรศัพท์ ของ ฉัน",
-      "en": "This is my phone number"
+      "en": "this is my phone number"
     },
     {
       "zh": "她 每天 都 去 散步",
       "th": "เธอ ไป เดิน ทุก วัน",
-      "en": "She goes for a walk every day"
+      "en": "she goes for a walk every day"
     },
     {
       "zh": "你 穿 这 件 衣服 很 漂亮",
       "th": "เธอ ใส่ เสื้อผ้า ตัว นี้ สวย มาก",
-      "en": "You look very pretty in this outfit"
+      "en": "you look very pretty in this outfit"
     },
     {
       "zh": "我们 的 猫 喜欢 吃 鱼",
       "th": "แมว ของ เรา ชอบ กิน ปลา",
-      "en": "Our cat likes to eat fish"
+      "en": "our cat likes to eat fish"
     },
     {
       "zh": "他 今天 没 来 学校",
       "th": "เขา วันนี้ ไม่ มา โรงเรียน",
-      "en": "He didn't come to school today"
+      "en": "he didn't come to school today"
     },
     {
       "zh": "你 有 没有 时间 帮 我",
       "th": "เธอ มี เวลา ช่วย ฉัน ไหม",
-      "en": "Do you have time to help me?"
+      "en": "do you have time to help me?"
     },
     {
       "zh": "这个 问题 太 容易 了",
       "th": "คำถาม นี้ ง่าย ไป",
-      "en": "This question is too easy"
+      "en": "this question is too easy"
     },
     {
       "zh": "她 很 快 会 回来",
       "th": "เธอ จะ กลับมา เร็วๆ นี้",
-      "en": "She will come back soon"
+      "en": "she will come back soon"
     },
     {
       "zh": "他 的 老师 很 严格",
       "th": "ครู ของ เขา เคร่งครัด มาก",
-      "en": "His teacher is very strict"
+      "en": "his teacher is very strict"
     },
     {
       "zh": "我们 下个 月 要 去 旅行",
       "th": "เรา จะ ไป เที่ยว ที่ ถัดไป",
-      "en": "We are going on a next trip"
+      "en": "we are going on a next trip"
     },
     {
       "zh": "你 的 笔 在 哪里",
       "th": "ปากกา ของ คุณ อยู่ ที่ไหน",
-      "en": "Where is your pen?"
+      "en": "where is your pen?"
     },
     {
       "zh": "这个 地方 很 漂亮",
       "th": "สถานที่ นี้ สวยงาม มาก",
-      "en": "This place is very beautiful"
+      "en": "this place is very beautiful"
     },
     {
       "zh": "我们 明天 要 去 游泳",
       "th": "พรุ่งนี้ เรา จะ ไป ว่ายน้ำ",
-      "en": "We are going swimming tomorrow"
+      "en": "we are going swimming tomorrow"
     },
     {
       "zh": "我 昨天 晚上 睡 得 很 晚",
@@ -2753,47 +2828,47 @@
     {
       "zh": "你 的 朋友 在 做 什么",
       "th": "เพื่อน ของ คุณ กำลัง ทำ อะไร",
-      "en": "What is your friend doing?"
+      "en": "what is your friend doing?"
     },
     {
       "zh": "她 是 我 的 姐姐",
       "th": "เธอ เป็น น้องสาว ของ ฉัน",
-      "en": "She is my sister"
+      "en": "she is my sister"
     },
     {
       "zh": "这个 菜 很 辣",
       "th": "อาหาร นี้ เผ็ด มาก",
-      "en": "This dish is very spicy"
+      "en": "this dish is very spicy"
     },
     {
       "zh": "今天 他 不 来",
       "th": "วันนี้ เขา ไม่ มา",
-      "en": "He's not coming today"
+      "en": "he is not coming today"
     },
     {
       "zh": "这本 书 很 有意思",
       "th": "หนังสือ เล่ม นี้ น่าสนใจ มาก",
-      "en": "This book is very interesting"
+      "en": "this book is very interesting"
     },
     {
       "zh": "你 喜欢 吃 甜 的 食物 吗",
       "th": "คุณ ชอบ กิน ของ หวาน ไหม",
-      "en": "Do you like eating dessert?"
+      "en": "do you like eating dessert?"
     },
     {
       "zh": "这个 学校 很 大",
       "th": "โรงเรียน นี้ ใหญ่ มาก",
-      "en": "This school is very big"
+      "en": "this school is very big"
     },
     {
       "zh": "你 去 过 中国 吗",
       "th": "คุณ เคย ไป จีน ไหม",
-      "en": "Have you been to China?"
+      "en": "have you been to China?"
     },
     {
       "zh": "他 的 父母 明天 要 来",
       "th": "พ่อแม่ ของ เขา จะ มา พรุ่งนี้",
-      "en": "His parents are coming tomorrow"
+      "en": "his parents are coming tomorrow"
     },
     {
       "zh": "我 会 帮 你 的",
@@ -2803,27 +2878,27 @@
     {
       "zh": "她 喜欢 穿 连衣裙",
       "th": "เธอ ชอบ ใส่ ชุด กระโปรง",
-      "en": "She likes wearing dresses"
+      "en": "she likes wearing dresses"
     },
     {
       "zh": "你 的 新 房子 很 漂亮",
       "th": "บ้าน ใหม่ ของ คุณ สวยงาม มาก",
-      "en": "Your new house is very beautiful"
+      "en": "your new house is very beautiful"
     },
     {
       "zh": "这 件 衬衫 多 少 钱",
       "th": "เสื้อ คอ ที่ นี้ กี่ บาท",
-      "en": "How much is this shirt?"
+      "en": "how much is this shirt?"
     },
     {
       "zh": "你 想 去 哪里",
       "th": "คุณ ต้อง ไป ที่ไหน",
-      "en": "Where do you must go?"
+      "en": "where do you must go?"
     },
     {
       "zh": "这 本 书 是 谁 的",
       "th": "หนังสือ เล่ม นี้ เป็น ของ ใคร",
-      "en": "Whose book is this?"
+      "en": "whose book is this?"
     },
     {
       "zh": "我 想 吃 一个 汉堡",
@@ -2833,32 +2908,32 @@
     {
       "zh": "我们 明天 去 逛 街 吧",
       "th": "พรุ่งนี้ เรา ไป เดิน ช้อป กัน นะ",
-      "en": "Let's go shopping tomorrow"
+      "en": "let's go shopping tomorrow"
     },
     {
       "zh": "这个 问题 很 重要",
       "th": "ปัญหา นี้ สำคัญ มาก",
-      "en": "This problem is very important"
+      "en": "this problem is very important"
     },
     {
       "zh": "他 昨天 没 来",
       "th": "เขา ไม่ มา เมื่อ วาน",
-      "en": "He didn't come yesterday"
+      "en": "he didn't come yesterday"
     },
     {
       "zh": "这个 女孩 很 漂亮",
       "th": "เด็ก หญิง คน นี้ สวยงาม มาก",
-      "en": "This girl is very beautiful"
+      "en": "this girl is very beautiful"
     },
     {
       "zh": "你 的 邮票 集 很 漂亮",
       "th": "แกะ จดหมาย ของ คุณ สวยงาม มาก",
-      "en": "Your stamp collection is very beautiful"
+      "en": "your stamp collection is very beautiful"
     },
     {
       "zh": "你 为什么 不 告诉 我",
       "th": "ทำไม คุณ ไม่ บอก ฉัน",
-      "en": "Why didn't you tell me"
+      "en": "why didn't you tell me"
     },
     {
       "zh": "我 爱 你",
@@ -2868,12 +2943,12 @@
     {
       "zh": "我 今天 要 去 图书馆",
       "th": "วันนี้ ฉัน จะ ไป ที่ ห้องสมุด",
-      "en": "I'm going to the library today"
+      "en": "I am going to the library today"
     },
     {
       "zh": "我们 的 学校 很 好",
       "th": "โรงเรียน ของ เรา ดี มาก",
-      "en": "Our school is very good"
+      "en": "our school is very good"
     },
     {
       "zh": "你 想 吃 什么",
