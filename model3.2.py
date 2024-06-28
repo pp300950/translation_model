@@ -99,7 +99,7 @@ if __name__ == "__main__":
     reverse_translation_dict = create_reverse_translation_dict(translation_dict)
 
     for example in example_sentences:
-        chinese_sentence = example.get('zh', '')
+        chinese_sentence = example.get('cn', '')
         thai_sentence = example.get('th', '')
         english_sentence = example.get('en', '')
 
