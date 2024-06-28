@@ -91,7 +91,7 @@ def translate_sentence(source_sentence, direction, translation_dict, reverse_tra
         tokenized_source = tokenize_sentence(source_sentence, reverse_translation_dict)
         return translate_with_attention(tokenized_source.split(), translation_dict, weights, context)
     else:
-        raise ValueError("Invalid direction. Use 'zh-th' for Chinese to Thai, 'th-zh' for Thai to Chinese, 'th-en' for Thai to English, or 'en-th' for English to Thai.")
+        return None
 
 if __name__ == "__main__":
     filename = 'translation_model.json'  # ระบุชื่อไฟล์ JSON ที่เก็บข้อมูลแปลภาษา
