@@ -78,10 +78,10 @@ def translate_sentence(source_sentence, direction, translation_dict, reverse_tra
     weights = attention_weights(decoder_hidden, encoder_outputs)
     context = context_vector(weights, encoder_outputs)
 
-    if direction == 'zh-th':
+    if direction == 'cn-th':
         tokenized_source = tokenize_sentence(source_sentence, translation_dict)
         return translate_with_attention(tokenized_source.split(), translation_dict, weights, context)
-    elif direction == 'th-zh':
+    elif direction == 'th-cn':
         tokenized_source = tokenize_sentence(source_sentence, reverse_translation_dict)
         return translate_with_attention(tokenized_source.split(), reverse_translation_dict, weights, context)
     elif direction == 'th-en':
