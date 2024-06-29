@@ -1,3 +1,5 @@
+#โมเดลเริ่มต้น  
+#เเปลได้เเค่ ไทย-จีน, จีน-ไทย
 import json
 import numpy as np
 
