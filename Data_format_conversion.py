@@ -1,6 +1,5 @@
 import json
 
-# ข้อมูลเเบบเดิม
 data = {
     "england": {
       "英格兰": "ประเทศอังกฤษ"
@@ -38,10 +37,9 @@ data = {
     "thai songs": {
       "泰国 歌曲": "เพลงไทย"
     },
-    # เพิ่มข้อมูลอื่นๆตามที่ต้องการ
 }
 
-# ฟังก์ชันสำหรับการเเปลงข้อมูล
+#ฟังก์ชันสำหรับการเเปลงข้อมูล
 def transform_data(data):
     transformed_data = []
     for en, translations in data.items():
@@ -60,12 +58,7 @@ def transform_data(data):
                     "en": en
                 })
     return transformed_data
-
-# เรียกใช้งานฟังก์ชัน
+    
 new_data = transform_data(data)
-
-# แปลงข้อมูลเป็น JSON string โดยใช้เครื่องหมาย "
 output = json.dumps(new_data, ensure_ascii=False, indent=4)
-
-# แสดงผลข้อมูลที่ถูกเเปลง
 print(output)
