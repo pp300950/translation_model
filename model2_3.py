@@ -1,8 +1,5 @@
-from flask import Flask, request, jsonify
 import json
 import numpy as np
-
-app = Flask(__name__)
 
 def load_translation_data(filename):
     with open(filename, 'r', encoding='utf-8') as f:
@@ -11,23 +8,18 @@ def load_translation_data(filename):
     translation_dict = translation_data.get('translation_dict', {})
     example_sentences = translation_data.get('example', [])
     
-    # สร้าง reverse_translation_dict สำหรับภาษาอังกฤษเป็นภาษาไทย
-    reverse_translation_dict_en_th = create_reverse_translation_dict(translation_dict)
+    reverse_translation_dict_en_th = create_reverse_translation_dict(translation_data.get('translation_dict_en_th', {}))
 
     return translation_dict, example_sentences, reverse_translation_dict_en_th
 
 def create_reverse_translation_dict(translation_dict):
     reverse_translation_dict = {}
     for k, v in translation_dict.items():
-        if isinstance(v, dict):
-            for inner_k, inner_v in v.items():
-                if isinstance(inner_v, list):
-                    for item in inner_v:
-                        reverse_translation_dict[item] = k
-                else:
-                    reverse_translation_dict[inner_v] = k
+        if isinstance(v, list):
+            for item in v:
+                reverse_translation_dict[item] = k
         else:
-            reverse_translation_dict[v] = k
+            reverse_translation_dict[tuple(v)] = k
     return reverse_translation_dict
 
 def softmax(x):
@@ -50,15 +42,18 @@ def translate_with_attention(source_words, translation_dict, attention_weights, 
         translated_word = translation_dict.get(word, '<unk>')
         
         if isinstance(translated_word, list):
-            translated_word = translated_word[0]  # เลือกค่าแรกในลิสต์
+            #เลือกค่าแรกในลิสต์
+            translated_word = translated_word[0]  
         
         if isinstance(translated_word, dict):
-            translated_word = list(translated_word.values())[0]  # เลือกค่าแรกในพจนานุกรม
+            #เลือกค่าแรกในพจนานุกรม
+            translated_word = list(translated_word.values())[0]  
         
         translated_words.append(translated_word)
     
-    translated_sentence = ' '.join(map(str, translated_words))  # แปลงทุกตัวเป็นสตริงก่อนรวมเข้าด้วยกัน
+    translated_sentence = ' '.join(map(str, translated_words))  #แปลงทุกตัวเป็นสตริงก่อนรวมเข้าด้วยกัน
     return translated_sentence
+
 
 def tokenize_sentence(sentence, dictionary):
     words = dictionary.keys()
@@ -93,30 +88,13 @@ def translate_sentence(source_sentence, direction, translation_dict, reverse_tra
     elif direction == 'th-en':
         tokenized_source = tokenize_sentence(source_sentence, reverse_translation_dict_en_th)
         return translate_with_attention(tokenized_source.split(), reverse_translation_dict_en_th, weights, context)
-    elif direction == 'en-th':  # เพิ่มเงื่อนไขสำหรับแปลจากอังกฤษเป็นไทย
-        tokenized_source = tokenize_sentence(source_sentence, reverse_translation_dict_en_th)
-        return translate_with_attention(tokenized_source.split(), reverse_translation_dict_en_th, weights, context)
+    elif direction == 'en-th':  
+        tokenized_source = tokenize_sentence(source_sentence, reverse_translation_dict)
+        return translate_with_attention(tokenized_source.split(), translation_dict, weights, context)
     else:
         return None
-
-@app.route('/translate', methods=['POST'])
-def translate_endpoint():
-    data = request.json
-    source_sentence = data.get('source_sentence', '')
-    direction = data.get('direction', 'zh-th')
-
-    translation_dict, example_sentences, reverse_translation_dict_en_th = load_translation_data('translation_model.json')
-    reverse_translation_dict = create_reverse_translation_dict(translation_dict)
-
-    translated_sentence = translate_sentence(source_sentence, direction, translation_dict, reverse_translation_dict, reverse_translation_dict_en_th)
-
-    return jsonify({
-        'source_sentence': source_sentence,
-        'translated_sentence': translated_sentence
-    })
-
 if __name__ == "__main__":
-    filename = 'translation_model (2) (1).json'  # ระบุชื่อไฟล์ JSON ที่เก็บข้อมูลแปลภาษา
+    filename = 'data_train (2.4).json' 
     translation_dict, example_sentences, reverse_translation_dict_en_th = load_translation_data(filename)
     reverse_translation_dict = create_reverse_translation_dict(translation_dict)
 
@@ -134,8 +112,8 @@ if __name__ == "__main__":
                 translation_dict[chinese_word] = thai_word
             if thai_word not in reverse_translation_dict:
                 reverse_translation_dict[thai_word] = chinese_word
-            if english_word not in reverse_translation_dict_en_th:
-                reverse_translation_dict_en_th[english_word] = thai_word
+            if thai_word not in reverse_translation_dict_en_th:
+                reverse_translation_dict_en_th[thai_word] = english_word
 
     while True:
         direction = input("zh-th,th-zh,th-en,en-th: ")
