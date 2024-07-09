@@ -3,7 +3,7 @@ This project was created for learning and teamwork development, aiming to practi
 Developers
 Pongpond - Responsible for improving and developing the learning system and algorithms used for language translation.
 Jenny - A Chinese language expert who will review and improve language data to ensure the system receives accurate information.
-Jin - An English language expert who will review and improve language data to ensure the system receives accurate information.
+Gin - An English language expert who will review and improve language data to ensure the system receives accurate information.
 
 License
 This project is not open source. Redistribution or modification is not permitted without permission from the team.
