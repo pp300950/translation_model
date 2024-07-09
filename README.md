@@ -5,4 +5,5 @@ Pongpond - Responsible for improving and developing the learning system and algo
 Jenny - A Chinese language expert who will review and improve language data to ensure the system receives accurate information.
 Gin - An English language expert who will review and improve language data to ensure the system receives accurate information.
 
+slide for project.
 [Borcelle (1).pdf](https://github.com/user-attachments/files/15935634/Borcelle.1.pdf)
